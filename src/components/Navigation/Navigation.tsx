@@ -1,24 +1,17 @@
 import Image from 'next/image';
-import { Button, Grid, Link } from '@mui/material';
+import { Grid, Link } from '@mui/material';
 import { styled } from '@mui/system';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import logoIcon from '../../../assets/images/logo.svg';
 import Menu from '../Menu/Menu';
+import LoginDialog from '../LoginDialog/LoginDialog';
 
 const StyledLink = styled(Link)(({ theme }) => ({
   color: theme.palette.text.primary,
   textDecoration: 'none',
   marginRight: '32px',
   '&:hover': { textDecoration: 'underline' },
-}));
-
-const StyledButton = styled(Button)(({ theme }) => ({
-  color: theme.palette.text.primary,
-  border: `1px solid ${theme.palette.text.primary}`,
-  textTransform: 'none',
-  padding: '9px 32px',
-  borderRadius: '5px',
 }));
 
 export default function Header() {
@@ -100,7 +93,7 @@ export default function Header() {
                 </StyledLink>
               </Grid>
               <Grid item>
-                <StyledButton>Зарегистрироваться</StyledButton>
+                <LoginDialog />
               </Grid>
             </Grid>
           </Grid>

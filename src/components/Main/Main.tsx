@@ -55,7 +55,7 @@ export default function Main() {
       >
         <Grid item lg={12}>
           <section>
-            <StyledHeading variant="h1">
+            <StyledHeading variant="h3">
               Инструмент мониторинга для трейдера, которому доверяют
             </StyledHeading>
             <StyledParagraph paragraph={true}>
@@ -69,7 +69,7 @@ export default function Main() {
       <Grid container justifyContent="flex-end">
         <Grid item lg={6}>
           <section>
-            <StyledHeading variant="h1">Проверенные результаты</StyledHeading>
+            <StyledHeading variant="h3">Проверенные результаты</StyledHeading>
             <StyledParagraph paragraph={true}>
               Объективные и сухие цифры подойдут не только для мониторинга своих
               результатов, но и для того, чтобы вызвать доверие у инвесторов

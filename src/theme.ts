@@ -14,7 +14,7 @@ let theme = createTheme({
     },
     text: {
       primary: 'rgba(255, 255, 255, 0.87)',
-      secondary: '#9575cd',
+      secondary: 'rgba(255, 255, 255, 0.87)',
     },
     background: {
       paper: '#171d2a',
@@ -23,13 +23,25 @@ let theme = createTheme({
   },
   typography: {
     fontFamily: ['Montserrat', 'sans-serif'].join(','),
-    h1: {
+    h3: {
       fontSize: '40px',
+    },
+    h1: {
+      fontSize: '70px',
     },
   },
   //status: {
   //    danger: 'orange',
   //},
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          overflowX: 'hidden',
+        },
+      },
+    },
+  },
 });
 
 theme = responsiveFontSizes(theme);
