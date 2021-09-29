@@ -1,3 +1,5 @@
+![alt text](preview.png "Preview")
+
 Задача: сделать готовую страницу, используя NextJs, Typescript, MaterialUI
 Макет: https://www.figma.com/file/hsmnVv98z94dTwplONgHm2/Equite-%E2%80%94-Test-case?node-id=0%3A1
 
